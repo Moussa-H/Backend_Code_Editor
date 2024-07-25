@@ -45,9 +45,9 @@ class User extends Authenticatable
         ];
     }
     public function hasSenderMessage(){
-        $this->hasMany(ChatMessages::class, 'sender_id');
+        $this->hasMany(ChatMessage::class, 'sender_id');
     }
     public function hasReceiverMessage(){
-        $this->hasMany(ChatMessages::class, 'receiver_id');
+        $this->hasMany(ChatMessage::class, 'receiver_id');
     }
 }
