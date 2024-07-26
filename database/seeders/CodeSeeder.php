@@ -11,8 +11,7 @@ class CodeSeeder extends Seeder
      * Run the database seeds.
      */
     public function run(): void
-    {
-        
+    {   
         Code::factory(50)->create();
     }
 }
