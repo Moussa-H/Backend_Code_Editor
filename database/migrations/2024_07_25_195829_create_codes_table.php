@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('codes', function (Blueprint $table) {
             $table->id();
+            $t->unsignedBigInteger('user_id');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');
+            $table->string("title",255);
+            $table->text("code");
             $table->timestamps();
         });
     }

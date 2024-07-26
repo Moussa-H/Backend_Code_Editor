@@ -18,7 +18,8 @@ class DatabaseSeeder extends Seeder
 
         $this->call([
             UserSeeder::class,
-            ChatMessageSeeder::class
+            ChatMessageSeeder::class,
+            CodeSeeder::class
         ]);
     }
 }
