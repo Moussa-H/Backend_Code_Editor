@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use App\Models\ChatMessages;
 use App\Models\User;
+use App\Models\Code;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
