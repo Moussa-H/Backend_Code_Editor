@@ -13,7 +13,7 @@ class ChatMessageSeeder extends Seeder
      */
     public function run(): void
     {
-    // ChatMessage::factory(50)->create();
+   ChatMessage::factory(50)->create();
         // Ensure there are users in the database
     //    $users = User::factory()->count(10)->create();
 
