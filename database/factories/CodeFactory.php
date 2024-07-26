@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -18,8 +19,8 @@ class CodeFactory extends Factory
     {
         return [
            'user_id' => User::factory(), 
-            'title' => $this->fake()->sentence,
-            'code' => $this->fake()->text,
+            'title' => $this->faker->sentence,
+            'code' => $this->faker->text,
             'created_at' => now(),
             'updated_at' => now(),
         ];
