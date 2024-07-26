@@ -12,7 +12,7 @@ class CodeSeeder extends Seeder
      */
     public function run(): void
     {
-       
+        
         Code::factory(50)->create();
     }
 }
