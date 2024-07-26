@@ -13,6 +13,7 @@ class ChatMessageFactory extends Factory
     /**
      * Define the model's default state.
      *
+     * 
      * @return array<string, mixed>
      */
     public function definition(): array
@@ -20,7 +21,10 @@ class ChatMessageFactory extends Factory
         return [
             'sender_id' => User::factory(),
             'receiver_id' => User::factory(),
-            'message' => fake()->sentence
+            'message' => fake()->text,
+            'created_at' => now(),
+            'updated_at' => now(),
         ];
     }
 }
+
